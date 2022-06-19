@@ -18,6 +18,12 @@ class Car: #กำหนดชื่อ Class
     def get_static_method():
         text = "static" #ตัวแปล Text ใช้ได้เแค่ใน get_static_method() เท่านั้น printCarDetail(self) ใช้ไม่ได้
         print(f"In {text} method") #{}คือใส่ค่าตัวแปลเป็น text
+
+#class method ต้องมีคำว่า cls เสมอ
+    @classmethod
+    def get_class_method(cls):
+        my_text = "Class"
+        print(f"This is {my_text} method")
         
     def __del__(self):
         print("object was destroyed") #กำหนด print ให้ได้แบบไหนก็ได้
@@ -29,3 +35,10 @@ if __name__=="__main__":
     #การเรียกใช้ static_method
     Car.get_static_method() #เรียกผ่าน Class
     my_car.get_static_method() #เรียกผ่าน instance/object
+
+    #การเรียกใช้ class_method
+    Car.get_class_method() #เรียกผ่าน Class
+    my_car.get_class_method() #เรียกผ่าน instance/object
+
+
+    
