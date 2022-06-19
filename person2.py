@@ -11,18 +11,21 @@ class Person:#สร้าง class
 
     def show(self):
         print(f'Name: {self.name} Gender: {self.gender} Profession: {self.profession} Study: {self.study}')
+    def __del__(self):
+            print("Object was destroyed")
 
-#person1
-jessa = Person('Jessa' , 'Female' , 'Softwere Engineer',0)
-jessa.work()
-jessa.show()
+if __name__=="__main__":
+    #person1
+    jessa = Person('Jessa' , 'Female' , 'Softwere Engineer',0)
+    jessa.work()
+    jessa.show()
 
-#person2
-jon = Person('Jon' , 'Male' , 'Doctor',15)
-jon.work()
-jon.show()
+    #person2
+    jon = Person('Jon' , 'Male' , 'Doctor',15)
+    jon.work()
+    jon.show()
 
-#person3
-lisa = Person('lisa' , 'Female' , 'Korean Singer',10)
-lisa.work()
-lisa.show()
+    #person3
+    lisa = Person('lisa' , 'Female' , 'Korean Singer',10)
+    lisa.work()
+    lisa.show()
