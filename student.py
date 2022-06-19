@@ -1,6 +1,6 @@
 class Student: #เรากำหนดชื่อ Class ตัวใหญ่เสมอ ช่อง 1
-    def __init__(self,id :str,name:str,major :str) -> None: #คือเราอยากได้ค่าอะไรบ้างอยู่ในช่อง 2
-        self.id = name
+    def __init__(self,id :str,name:str,major="IT") -> None: #คือเราอยากได้ค่าอะไรบ้างอยู่ในช่อง 2 ที่ major="IT" คือเรากำหนดค่าเริ่มต้นไว้ก่อนถ้าเวลาprint เช่นชื่อ James มันจะเติมอัตโนมัติ
+        self.id = id
         self.name = name
         self.major = major
      
@@ -19,3 +19,5 @@ if __name__=="__main__":
     John = Student(112,"John","MKT")
     John.Printdisplay_detail() #ใส่วงเล็บเสมอ หลัง . ให้ใส่ชื่อ ในบรรทัดที่ 7 มันคือการเรียกใช้
     
+    James = Student(113,"James")
+    James.Printdisplay_detail()
