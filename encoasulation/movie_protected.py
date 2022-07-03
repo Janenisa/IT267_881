@@ -1,6 +1,3 @@
-from turtle import title
-from pip import main
-
 class Movie:
     def __init__(self) -> None:
         #ตัวแปร Protected ขึ้นต้นด้วย _ 1 ครั้ง
@@ -31,6 +28,9 @@ class Documentary(Movie):
         Movie._getmovie_detail(self) 
         print(f'Channel: {self.channel}')
 
+    #สร้าง public method เพื่อให้คลาสอื่นเรียกใช้ method
+    def print_detail(self):
+        self._getmovie_detail()       
 #สร้าง object
 if __name__ == '__main__':
     m1 = Documentary()
