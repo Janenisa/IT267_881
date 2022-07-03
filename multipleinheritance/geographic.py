@@ -4,7 +4,7 @@ class Geographic:
         self.latitude = lat
         self.longitud = long
 
-    def getcordinate(self):
+    def getcordinate(self): #แสดงค่า latitude longitud
         return f'Latitude : {self.latitude}\nLongitud : {self.longitud}'
     
     def gettimezone(self):
