@@ -8,7 +8,7 @@ class Geographic:
         return f'Latitude : {self.latitude}\nLongitud : {self.longitud}'
     
     def gettimezone(self):
-        timezone = round(self.longitud/12 - 1)
+        timezone = round(self.longitud/12 - 1) #เราใส่ round เพื่อให้ค่าที่ออกมาถูกปัดเศษตามจำนวนหลัก
         if timezone > 0:
             return f'TimeZone = +{timezone}' #timezone +7
         else:
