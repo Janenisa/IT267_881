@@ -3,7 +3,7 @@ from temperature import Temperature
 
 #คือ import 2 ตัว Class เลยต้องมี ,คั่น เพราะเอามาสองอัน
 class Country(Geographic,Temperature): 
-    def __init__(self,name,area,pop) -> None:
+    def __init__(self,name,area,pop) -> None: #pop คือ population
         super().__init__() #ใช้super
         Geographic. __init__(self) #เราใช้ init
         self.name = name
