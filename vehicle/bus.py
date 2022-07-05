@@ -14,4 +14,4 @@ class Bus(Vehicle):
         Vehicle.v_detail(self)
         print(f'color: {self.color}')
         print(f'capacity: {self.capacity}')
-
+               
