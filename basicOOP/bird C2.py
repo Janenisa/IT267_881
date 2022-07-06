@@ -1,28 +1,30 @@
 class Bird:
-    global bird_type #ถ้าไม่ใส่ global จะกลายเป็น Class variable ทันที
+    global bird_type #global variable
+    #ถ้าไม่ใส่คำว่า global ตัวแปร bird_type จะกลายเป็น class variable
     bird_type = 'parrot'
-    bird_name = 'Lori' #เป็น Class variable
-    def __init__(self,color) -> None: 
-        self.color = color
-        name = 'Peter'
-        print(f'{name} in init') 
+    bird_name = 'Lori' #class variable
+    
+    def __init__(self,color) -> None:
+        self.color = color #instance variable
+        name = 'Peter' #local variable
+        print(f'{name} in init') #call local variable
 
-if __name__=='__(main)__':
+if __name__ == '__main__':
     my_bird = Bird('Green,Blue')
 
     #call instance variable ชื่อวัตถุ.instance_variable
     print(my_bird.color)
 
-    #call class variable ชื่อวัตถุ.class_variable
+    #call class variable ชื่อคลาส.class_variable
     print(Bird.bird_name)
 
-    #class glibal variable
-    print(bird_type)
+    #call global variable เรียกชื่อตัวแปรได้เลย
+    print(bird_type) 
 
     #error
-    #พยายามเรียก local variable
-    #print(name)  #์Name : name 'name' is not defined
+    #พยายามเรียก local varibale
+    #print(name)#NameError: name 'name' is not defined
     
-    #พยายามเรียก global variable
-    #print(Bird.bird_typt)
-    #type object 'Bird' has no attribute 'bird_type'
+    #พยายามเรียก global varibale ผ่าน class
+    #print(Bird.bird_type)
+    #type object 'Bird' has no attribute 'bird_type'.
