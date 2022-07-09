@@ -1,10 +1,11 @@
 from country import Country
 
 #สร้าง object ของ country ประเทศไทย
-c1 = Country ('Thailand' ,513120,66.93 )
+c1 = Country('Thailand',513120,66.93)
 c1.setcordinate(15.8700,100.9925)
 c1.setcelsius(31)
 c1.show_detail()
+
 
 #สร้าง object ของ country ประเทศ Norway
 c2 = Country ('Norway' ,385207,5.379 ) #Area: 385207 Population : 5.379 Million
