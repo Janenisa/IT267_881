@@ -4,7 +4,7 @@ mike = EmpIT('001','Mike',60000)
 mike.add_skill('Python,JavaScript')
 mike.add_experience(5)
 mike.emp_detail()
-mike.it_salary()
+#mike.it_salary()
 
 from empmkt import Empmkt
 anna = Empmkt('002', 'Anna', 35000)
